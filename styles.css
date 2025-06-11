@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+.app-shell {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #eee;
+  width: 220px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.sidebar li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.16s;
+}
+.sidebar li.selected, .sidebar li:hover {
+  background: #d1e3fa;
+}
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+.editor-panel {
+  flex: 2;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px #0001;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.file-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.file-bar ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.file-bar li {
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.14s;
+}
+.file-bar li.selected, .file-bar li:hover {
+  background: #d1e3fa;
+}
+.editor {
+  min-height: 200px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  resize: vertical;
+  width: 100%;
+  background: #fafbff;
+}
+button {
+  padding: 0.5rem 1.2rem;
+  margin-right: 1rem;
+  background: #217bf4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+button:hover {
+  background: #115ec9;
+}
+.terminal-panel {
+  background: #181e29;
+  color: #6EE7B7;
+  border-radius: 8px;
+  padding: 1.2rem;
+  font-family: 'Fira Mono', monospace;
+  min-height: 120px;
+  box-shadow: 0 4px 14px #0002;
+}
+.terminal-panel h2 {
+  color: #a5bfff;
+  font-size: 1rem;
+  margin-top: 0;
+}
