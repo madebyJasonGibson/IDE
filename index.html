@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Builder Platform</title>
+  <title>Holistic Project Builder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="theme-toggle-panel">
+    <label for="themeSelect">Theme:</label>
+    <select id="themeSelect">
+      <option value="business">Business</option>
+      <option value="fun">Fun</option>
+      <option value="creative">Creative</option>
+      <option value="classy">Classy</option>
+      <option value="modern">Modern</option>
+    </select>
+  </div>
   <div class="app-shell">
     <aside class="sidebar">
-      <h1>Project Types</h1>
-      <ul id="projectTypes">
-        <!-- Dynamically populated -->
-      </ul>
+      <h1>Project Categories</h1>
+      <div id="projectCategories"></div>
     </aside>
     <main class="main-panel">
       <section class="editor-panel">
@@ -21,8 +29,10 @@
           <ul id="fileList"></ul>
         </div>
         <textarea id="editor" class="editor" placeholder="Select a file to edit..."></textarea>
-        <button id="saveBtn">Save</button>
-        <button id="downloadBtn">Download Project ZIP</button>
+        <div class="editor-actions">
+          <button id="saveBtn">Save</button>
+          <button id="downloadBtn">Download Project ZIP</button>
+        </div>
       </section>
       <section class="terminal-panel">
         <h2>Terminal Emulator</h2>
