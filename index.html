@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Builder Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <h1>Project Types</h1>
+      <ul id="projectTypes">
+        <!-- Dynamically populated -->
+      </ul>
+    </aside>
+    <main class="main-panel">
+      <section class="editor-panel">
+        <div class="file-bar">
+          <span>Files:</span>
+          <ul id="fileList"></ul>
+        </div>
+        <textarea id="editor" class="editor" placeholder="Select a file to edit..."></textarea>
+        <button id="saveBtn">Save</button>
+        <button id="downloadBtn">Download Project ZIP</button>
+      </section>
+      <section class="terminal-panel">
+        <h2>Terminal Emulator</h2>
+        <pre id="terminal"></pre>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
