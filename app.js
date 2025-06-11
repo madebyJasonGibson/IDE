@@ -18,22 +18,6 @@ const projectData = {
 </body>
 </html>`,
         'crm.js': `document.getElementById('crmApp').innerHTML = '<p>Welcome to your CRM!</p>';`
-      },
-      'Advanced CRM': {
-        'manifest.json': '{\n  "timeZone": "America/Los_Angeles"\n}',
-        'index.html': `<!DOCTYPE html>
-<html>
-<head>
-  <title>Advanced CRM</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Advanced CRM</h1>
-  <div id="crmApp"></div>
-  <script src="advanced-crm.js"></script>
-</body>
-</html>`,
-        'advanced-crm.js': `document.getElementById('crmApp').innerHTML = '<p>Advanced features coming soon.</p>';`
       }
     }
   },
@@ -134,10 +118,6 @@ document.getElementById('callApi').onclick = function() {
   }
 };
 
-// Theme options
-const themes = ['business', 'fun', 'creative', 'classy', 'modern'];
-
-// --- UI Logic ---
 const editor = document.getElementById('editor');
 const themeSelect = document.getElementById('themeSelect');
 const projectCategoriesDiv = document.getElementById('projectCategories');
@@ -147,9 +127,7 @@ let currentFile = null;
 let files = {};
 
 // Theme Handling
-themeSelect.onchange = () => {
-  setTheme(themeSelect.value);
-};
+themeSelect.onchange = () => setTheme(themeSelect.value);
 function setTheme(theme) {
   document.body.className = `theme-${theme}`;
 }
