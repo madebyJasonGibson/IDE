@@ -13,7 +13,6 @@
   --border: #eee;
 }
 
-/* Theme: Fun */
 body.theme-fun {
   --primary-bg: #fffbe7;
   --primary-fg: #48416a;
@@ -29,7 +28,6 @@ body.theme-fun {
   --border: #fcb9b2;
 }
 
-/* Theme: Creative */
 body.theme-creative {
   --primary-bg: #f0f7ff;
   --primary-fg: #302d43;
@@ -45,7 +43,6 @@ body.theme-creative {
   --border: #cfd2fc;
 }
 
-/* Theme: Classy */
 body.theme-classy {
   --primary-bg: #f5efeb;
   --primary-fg: #493323;
@@ -61,7 +58,6 @@ body.theme-classy {
   --border: #c1b2a3;
 }
 
-/* Theme: Modern */
 body.theme-modern {
   --primary-bg: #232946;
   --primary-fg: #eebbc3;
@@ -77,7 +73,6 @@ body.theme-modern {
   --border: #393d5c;
 }
 
-/* Theme: Business (default) */
 body.theme-business,
 body:not([class^="theme-"]) {
   --primary-bg: #f6f8fa;
@@ -101,6 +96,7 @@ body {
   color: var(--primary-fg);
   transition: background 0.2s, color 0.2s;
 }
+
 .theme-toggle-panel {
   display: flex;
   align-items: center;
